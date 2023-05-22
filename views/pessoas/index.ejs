@@ -5,12 +5,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tarefa 1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/'>
     <script src='main.js'></script>
+    <title>Pessoas Cadastradas</title>
 </head>
 <body>
+    <h3>
     <% usuarios.forEach((usuario) => { %>
-        <%= usuario.nome %>
-    <% }) %>
+        <br/><h3 class="button" onClick="location = '/pessoas/criar'"><a href="/pessoas/delete/<%=pessoa.nome %>">Deletar</h3></a>
+        <%= usuario.id %><br/>
+        <%= usuario.nome %><br/>
+        <%= usuario.sobrenome %><br/>
+        <%= usuario.idade %><br/>
+        <%= usuario.altura %><br/>
+    <% }) %> <br/>
+    </h3>
+    <h2 class="button" onClick="location = '/pessoas/criar'">Voltar</h2>
+
 </body>
 </html>
